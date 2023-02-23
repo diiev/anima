@@ -124,17 +124,17 @@ function js() {
 
 function images() {
     return src(path.src.images, {base: srcPath + "assets/img/"})
-        .pipe(imagemin([
+       /* .pipe(imagemin([
             imagemin.gifsicle({interlaced: true}),
-            imagemin.mozjpeg({quality: 75, progressive: true}),
+            imagemin.mozjpeg({quality: 100, progressive: true}),
             imagemin.optipng({optimizationLevel: 5}),
             imagemin.svgo({
                 plugins: [
                     {removeViewBox: true},
-                    {cleanupIDs: false}
+                    {cleanupIDs: true}
                 ]
             })
-        ]))
+        ]))*/
         .pipe(dest(path.build.images))
         .pipe(browserSync.reload({stream: true}));
 }

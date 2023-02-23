@@ -1,0 +1,19 @@
+.button {
+    width: 284px;
+    padding: 25px 0;
+    background: $first-color;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .4s;
+    color: #fff;
+    &:hover {
+        color: $first-color;
+        text-decoration: none;
+        background: #fff;
+    }
+    &_grey {
+        background: #141414;
+    }
+}

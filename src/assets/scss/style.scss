@@ -9,7 +9,11 @@
 }
 
 .container {
-    width: 1440px;
+    width: 1280px;
     margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
 }
-@import 'blocks/header.scss';
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/buttons';
