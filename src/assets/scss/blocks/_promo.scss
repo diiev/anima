@@ -1,35 +1,69 @@
 .promo {
-   
+    padding: 20px 0px 0px 0px;
     min-height: 821px;
     background: url('../img/promo/bg_promo.jpg') center center/cover no-repeat;
+
     &__slider {
-        position: relative;
+        height: 821px;
+        &-item {
+            position: relative;
+        }
+        &-btns {
+            z-index: 10;
+            position: absolute;
+            left: 15px;
+            bottom: calc(220px);
+            button {
+                margin-right: 7px;
+                background-color: $first-color;
+                width: 45px;
+                height: 45px;
+                outline: none;
+                border: none;
+                color: #fff;
+                transition: all .4s;
+                &:hover {
+                    background-color: #fff;
+                    color: $first-color;
+                }
+              
+            } 
+            .disabled {
+                   background-color: transparent;
+                   border: 1px solid #fff;
+            }
+        }
     }
     &__img {
-        position: absolute;
-        top: 12px;
+       position: absolute;
+        top: 0px;
         right: 0;
-        z-index: 1;
-     
+        z-index: -1;
         img {
             height: 100%;
             width: 100%;
-            
         }
     }
-    &__block {
-        z-index: 10;
-        padding: 67px 43px 58px 103px;
+    &__border {
         position: absolute;
-        left: 0;
-        top: 149px;
+        width: 888px;
+        height: 582px;
+        left: 249px;
+        top: 57px;
+        border:  1px solid $first-color;
+        z-index: -10;
+    }
+    &__text {
+        margin-top: 149px;
+        padding: 67px 43px 58px 103px;
         width: 743px;
-        min-height: 361px;
+        height: 361px;
         background: #000;
     }
-    &__sublock {
+    &__descr {
         display: flex;
         align-items: center;
+
         
     }
     &__divider {
@@ -39,12 +73,15 @@
         margin-left: 11px;
     }
     &__title {
+        overflow: hidden;
+        height: 120px;
         margin-top: 15px;
         font-weight: 400;
         font-size: 50px;
         line-height: 59px;
         text-transform: uppercase;
         color: #FFFFFF;
+        text-overflow:clip;
         span {
             color: $first-color;
         }
@@ -57,6 +94,7 @@
         line-height: 16px;
         text-transform: uppercase;
         color: #9C9C9C;
+
     }
     &__buttons {
         margin-top: 25px;
@@ -66,4 +104,28 @@
     &__button {
         margin-right: 23px;
     }
+  
+}
+
+.tns-nav {
+   
+    position: absolute;
+    z-index: 100;
+    left: 15px;
+    bottom: 140px;
+    &-active {
+        background-color: $first-color !important;
+        } 
+    button {
+        background-color: #fff;
+        width: 40px;
+        height: 3px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        margin-right: 18px;
+       
+    }
+   
+    
 }
