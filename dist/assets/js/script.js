@@ -53,6 +53,7 @@ var slider = tns({
   items: 1,
   loop: false,
   controls: false,
+  nav: false,
   speed: "800"
  
 });
