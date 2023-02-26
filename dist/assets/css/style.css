@@ -1037,6 +1037,10 @@ template {
     padding: 11px 142px;
 }
 
+.details__slider-descr_right {
+    right: 0;
+}
+
 .details__link {
     display: block;
     margin-top: 60px;
