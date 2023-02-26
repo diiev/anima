@@ -32,3 +32,27 @@ document.querySelector('.prev').classList.remove('disabled');
   document.querySelector('.header__form').classList.toggle('header__form-active');
 });
 
+const arrow = document.querySelectorAll('.advantages__spoiler-arrow');
+const descr = document.querySelectorAll('.advantages__spoiler-descr');
+for (let i = 0; i < arrow.length; i++) {
+  arrow[i].addEventListener('click', function(){
+    if (arrow[i] == this) {
+      arrow[i].classList.toggle('advantages__spoiler-arrow_active');
+      descr[i].classList.toggle('advantages__spoiler-descr_active');
+    }
+    else {
+      arrow[i].classList.remove('advantages__spoiler-arrow_active');
+      descr[i].classList.remove('advantages__spoiler-descr_active');
+    }
+ 
+  })
+}
+
+var slider = tns({
+  container: '.details__slider',
+  items: 1,
+  loop: false,
+  controls: false,
+  speed: "800"
+ 
+}); 

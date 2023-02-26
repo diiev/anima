@@ -1,0 +1,9 @@
+.divider {
+    width: 120px;
+    height: 1px;
+    background-color: $first-color;
+    &_center {
+       margin: 0 auto;
+    }
+    
+}

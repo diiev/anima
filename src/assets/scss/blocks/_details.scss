@@ -1,0 +1,87 @@
+.details {
+    padding-top: 60px;
+    background: rgba(223, 223, 223, 0.18);
+    &__title {
+        margin-top: 9px;
+    }
+    &__slider {
+        margin-top: 41px;
+        &-btns {
+            position: absolute;
+            right: 0;
+            top: 70px;
+            button {
+                width: 45px;
+                height: 45px;
+                background: transparent;
+                border: 1px solid #E5E5E5;
+                margin-right: 7px;
+                outline: none;
+                color:#B1B1B1;
+                transition: all .5s;
+                &:hover {
+                    background: $first-color;
+                    color: #fff;
+                }
+            }
+           
+        }
+        &-wrapper {
+            display: grid;
+            grid-template-columns: 490px 250px 490px;
+            grid-template-rows: 340px;
+            grid-auto-rows: 340px;
+            overflow: hidden;
+            gap:10px;
+          
+           
+        }
+        &-link {
+            position: relative;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        &-descr {
+            position: absolute;
+            bottom: 19px;
+            width: 470px;
+            background: #0000008a;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 36px;
+            padding: 11px 142px;
+        }
+    }
+    &__link {
+        
+        display: block;
+        margin-top: 60px;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 25px;
+        text-transform: uppercase;
+        color: #282A30;
+        text-align: right;
+        span {
+            margin-left: 10px;
+            font-size: 10px;
+           vertical-align: middle;
+          
+        }
+        &:hover {
+            text-decoration: none;
+            color: $first-color;
+        }
+    }
+
+}
+#details__slider-link_second {
+    grid-column: 2 /4;
+}
+#details__slider-link_third {
+    grid-column: 1 / 3;
+}

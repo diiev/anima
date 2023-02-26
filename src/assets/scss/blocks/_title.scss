@@ -1,0 +1,10 @@
+.title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    text-transform: uppercase;
+    color: #000;
+    span {
+        color: $first-color;
+    }
+}

@@ -835,3 +835,234 @@ template {
 .button_grey {
     background: #141414;
 }
+
+.advantages {
+    padding-top: 66px;
+    padding-bottom: 41px;
+}
+
+.advantages__title {
+    text-align: center;
+    margin-top: 9px;
+}
+
+.advantages__wrapper {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 395px 370px 395px;
+    grid-template-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(100px, auto);
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+}
+
+.advantages__img {
+    height: 586px;
+    overflow: hidden;
+    outline: 8px solid #28553F;
+    outline-offset: -8px;
+}
+
+.advantages__spoiler-item {
+    margin-bottom: 43px;
+    position: relative;
+}
+
+.advantages__spoiler-arrow {
+    transition: all 0.7s;
+}
+
+.advantages__spoiler-arrow_active {
+    transform: rotate(-180deg);
+}
+
+.advantages__spoiler-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+
+.advantages__spoiler-title_right {
+    text-align: right;
+}
+
+.advantages__spoiler-divider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advantages__spoiler-divider_right {
+    flex-direction: row-reverse;
+}
+
+.advantages__spoiler-divider i {
+    color: #28553F;
+    font-size: 8px;
+    cursor: pointer;
+}
+
+.advantages__spoiler-line {
+    height: 1px;
+    background: #28553F;
+    width: 328px;
+    margin-left: 13px;
+}
+
+.advantages__spoiler-line_right {
+    margin-left: 0px;
+    margin-right: 13px;
+}
+
+.advantages__spoiler-count {
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
+    background: #28553F;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.advantages__spoiler-descr {
+    margin-top: -20px;
+    opacity: 0;
+    z-index: -1;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    transition: all 0.5s;
+}
+
+.advantages__spoiler-descr_active {
+    margin-top: 10px;
+    opacity: 1;
+}
+
+.advantages__spoiler-descr_right {
+    text-align: right;
+}
+
+.divider {
+    width: 120px;
+    height: 1px;
+    background-color: #28553F;
+}
+
+.divider_center {
+    margin: 0 auto;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.title span {
+    color: #28553F;
+}
+
+.details {
+    padding-top: 60px;
+    background: rgba(223, 223, 223, 0.18);
+}
+
+.details__title {
+    margin-top: 9px;
+}
+
+.details__slider {
+    margin-top: 41px;
+}
+
+.details__slider-btns {
+    position: absolute;
+    right: 0;
+    top: 70px;
+}
+
+.details__slider-btns button {
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    border: 1px solid #E5E5E5;
+    margin-right: 7px;
+    outline: none;
+    color: #B1B1B1;
+    transition: all 0.5s;
+}
+
+.details__slider-btns button:hover {
+    background: #28553F;
+    color: #fff;
+}
+
+.details__slider-wrapper {
+    display: grid;
+    grid-template-columns: 490px 250px 490px;
+    grid-template-rows: 340px;
+    grid-auto-rows: 340px;
+    overflow: hidden;
+    gap: 10px;
+}
+
+.details__slider-link {
+    position: relative;
+}
+
+.details__slider-link img {
+    height: 100%;
+    width: 100%;
+}
+
+.details__slider-descr {
+    position: absolute;
+    bottom: 19px;
+    width: 470px;
+    background: rgba(0, 0, 0, 0.5411764706);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    padding: 11px 142px;
+}
+
+.details__link {
+    display: block;
+    margin-top: 60px;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #282A30;
+    text-align: right;
+}
+
+.details__link span {
+    margin-left: 10px;
+    font-size: 10px;
+    vertical-align: middle;
+}
+
+.details__link:hover {
+    text-decoration: none;
+    color: #28553F;
+}
+
+#details__slider-link_second {
+    grid-column: 2/4;
+}
+
+#details__slider-link_third {
+    grid-column: 1/3;
+}

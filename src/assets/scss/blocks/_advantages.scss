@@ -1,0 +1,100 @@
+.advantages {
+    padding-top: 66px;
+    padding-bottom: 41px;
+    &__title {
+        text-align: center;
+        margin-top: 9px;
+    }
+    &__wrapper {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 395px 370px 395px;
+        grid-template-rows: minmax(100px, auto);
+        grid-auto-rows: minmax(100px, auto);
+        column-gap: 40px;
+    }
+    &__img {
+        height: 586px;
+        overflow: hidden;
+        outline: 8px solid $first-color;
+        outline-offset: -8px;
+    }
+    &__spoiler {
+       &-item {
+        margin-bottom: 43px;
+        position: relative;
+       
+        }
+        &-arrow {
+            transition: all .7s;
+            &_active {
+                    transform: rotate(-180deg);
+            }
+       }
+        &-title {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 23px;
+            text-transform: uppercase;
+            &_right {
+                text-align: right;
+            }
+        }
+        &-divider {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &_right {
+                flex-direction: row-reverse;
+            }
+
+            i {
+                color: $first-color;
+                font-size: 8px;
+                cursor: pointer;
+
+            }
+            
+        }
+        &-line {
+            height: 1px;
+            background: $first-color;
+            width: 328px;
+            margin-left: 13px;
+            &_right {
+                margin-left: 0px;
+                margin-right: 13px;
+            }
+        }
+        &-count {
+            width: 46px;
+            height: 46px;
+            border-radius: 100%;
+            background: $first-color;
+            color: #fff;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 10px 0;
+        }
+        &-descr {
+            margin-top: -20px;
+            opacity: 0;
+            z-index: -1;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 14px; 
+            transition: all .5s;
+            &_active {
+                margin-top: 10px;
+                opacity: 1;
+            }
+            &_right {
+                text-align: right;
+            }
+        }
+    }
+}
