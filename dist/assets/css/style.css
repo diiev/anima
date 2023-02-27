@@ -676,6 +676,44 @@ template {
     text-decoration: none;
 }
 
+.button {
+    width: 284px;
+    padding: 25px 0;
+    background: #28553F;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.4s;
+    color: #fff;
+}
+
+.button:hover {
+    color: #28553F;
+    text-decoration: none;
+    background: #fff;
+}
+
+.button_grey {
+    background: #141414;
+}
+
+.slider-btns {
+    display: flex;
+    gap: 7px;
+    z-index: 10;
+    position: absolute;
+}
+
+.slider-btns button {
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    outline: none;
+    border: none;
+    transition: all 0.5s;
+}
+
 .promo {
     padding: 20px 0px 0px 0px;
     min-height: 821px;
@@ -691,21 +729,13 @@ template {
 }
 
 .promo__slider-btns {
-    z-index: 10;
-    position: absolute;
     left: 15px;
     bottom: 220px;
 }
 
 .promo__slider-btns button {
-    margin-right: 7px;
     background-color: #28553F;
-    width: 45px;
-    height: 45px;
-    outline: none;
-    border: none;
     color: #fff;
-    transition: all 0.4s;
 }
 
 .promo__slider-btns button:hover {
@@ -812,28 +842,6 @@ template {
     outline: none;
     border: none;
     margin-right: 18px;
-}
-
-.button {
-    width: 284px;
-    padding: 25px 0;
-    background: #28553F;
-    font-weight: 400;
-    font-size: 16px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: all 0.4s;
-    color: #fff;
-}
-
-.button:hover {
-    color: #28553F;
-    text-decoration: none;
-    background: #fff;
-}
-
-.button_grey {
-    background: #141414;
 }
 
 .advantages {
@@ -985,20 +993,13 @@ template {
 }
 
 .details__slider-btns {
-    position: absolute;
-    right: 0;
+    right: 15px;
     top: 70px;
 }
 
 .details__slider-btns button {
-    width: 45px;
-    height: 45px;
-    background: transparent;
     border: 1px solid #E5E5E5;
-    margin-right: 7px;
-    outline: none;
     color: #B1B1B1;
-    transition: all 0.5s;
 }
 
 .details__slider-btns button:hover {
@@ -1022,6 +1023,7 @@ template {
 .details__slider-link img {
     height: 100%;
     width: 100%;
+    box-shadow: 6px 4px 5px -2px rgba(0, 0, 0, 0.25);
 }
 
 .details__slider-descr {

@@ -9,19 +9,11 @@
             position: relative;
         }
         &-btns {
-            z-index: 10;
-            position: absolute;
             left: 15px;
-            bottom: calc(220px);
+            bottom: 220px;
             button {
-                margin-right: 7px;
                 background-color: $first-color;
-                width: 45px;
-                height: 45px;
-                outline: none;
-                border: none;
                 color: #fff;
-                transition: all .4s;
                 &:hover {
                     background-color: #fff;
                     color: $first-color;

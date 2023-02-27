@@ -7,18 +7,11 @@
     &__slider {
         margin-top: 41px;
         &-btns {
-            position: absolute;
-            right: 0;
+            right: 15px;
             top: 70px;
             button {
-                width: 45px;
-                height: 45px;
-                background: transparent;
                 border: 1px solid #E5E5E5;
-                margin-right: 7px;
-                outline: none;
                 color:#B1B1B1;
-                transition: all .5s;
                 &:hover {
                     background: $first-color;
                     color: #fff;
@@ -33,14 +26,13 @@
             grid-auto-rows: 340px;
             overflow: hidden;
             gap:10px;
-          
-           
         }
         &-link {
             position: relative;
             img {
                 height: 100%;
                 width: 100%;
+                box-shadow: 6px 4px 5px -2px rgba(0, 0, 0, 0.25);
             }
         }
         &-descr {
