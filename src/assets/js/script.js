@@ -1,5 +1,5 @@
 
-var slider = tns({
+var promoSlider = tns({
   container: '.promo__slider',
   items: 1,
   loop: false,
@@ -8,24 +8,23 @@ var slider = tns({
  
 }); 
 
-document.querySelector('.prev').addEventListener('click',function () {
-  slider.goTo('prev'); 
-  const info = slider.getInfo(),
+document.querySelector('.promo__slider_prev').addEventListener('click',function () {
+  promoSlider.goTo('prev'); 
+  const info = promoSlider.getInfo(),
 index = info.index;
-
       if (index == 0)
-  document.querySelector('.prev').classList.add('disabled');
-  document.querySelector('.next').classList.remove('disabled');
+  document.querySelector('.promo__slider_prev').classList.add('disabled');
+  document.querySelector('.promo__slider_next').classList.remove('disabled');
   
 });
-document.querySelector('.next').addEventListener('click',function () {
-  slider.goTo('next'); 
-  const info = slider.getInfo(),
+document.querySelector('.promo__slider_next').addEventListener('click',function () {
+  promoSlider.goTo('next'); 
+  const info = promoSlider.getInfo(),
   index = info.index;
   lastIndex = info.slideCount;
   if (index == lastIndex - 1)
-document.querySelector('.next').classList.add('disabled');
-document.querySelector('.prev').classList.remove('disabled');
+document.querySelector('.promo__slider_next').classList.add('disabled');
+document.querySelector('.promo__slider_prev').classList.remove('disabled');
 }); 
 
  document.querySelector('.header__search').addEventListener('click', function(){
@@ -48,7 +47,7 @@ for (let i = 0; i < arrow.length; i++) {
   })
 }
 
-var slider = tns({
+var detailsSlider = tns({
   container: '.details__slider',
   items: 1,
   loop: false,
@@ -57,3 +56,9 @@ var slider = tns({
   speed: "800"
  
 }); 
+document.querySelector('.details__slider_prev').addEventListener('click',function () {
+  detailsSlider.goTo('prev');
+});
+document.querySelector('.details__slider_next').addEventListener('click',function () {
+  detailsSlider.goTo('next');
+});
