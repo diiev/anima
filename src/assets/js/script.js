@@ -74,3 +74,13 @@ var stocks__cardslider = tns({
   speed: "800"
  
 }); 
+var ideas__slider = tns({
+  container: '.ideas__slider',
+  items: 1,
+  loop: false,
+  controls: false,
+  nav: true,
+  navPosition: "bottom",
+  speed: "800"
+ 
+}); 
