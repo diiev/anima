@@ -84,3 +84,9 @@ var ideas__slider = tns({
   speed: "800"
  
 }); 
+document.querySelector('.ideas__slider_prev').addEventListener('click',function () {
+  ideas__slider.goTo('prev');
+});
+document.querySelector('.ideas__slider_next').addEventListener('click',function () {
+  ideas__slider.goTo('next');
+});
