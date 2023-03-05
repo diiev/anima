@@ -1349,3 +1349,11 @@ template {
     border: none;
     margin-right: 18px;
 }
+
+.footer {
+    min-height: 665px;
+}
+
+.footer__top {
+    min-height: 367px;
+}
