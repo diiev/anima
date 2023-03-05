@@ -678,7 +678,7 @@ template {
 
 .button {
     width: 284px;
-    padding: 25px 0;
+    padding: 25px 0px;
     background: #28553F;
     font-weight: 400;
     font-size: 16px;
@@ -823,18 +823,18 @@ template {
     margin-right: 23px;
 }
 
-.tns-nav {
+.promo .tns-nav {
     position: absolute;
     z-index: 100;
     left: 15px;
     bottom: 140px;
 }
 
-.tns-nav-active {
+.promo .tns-nav-active {
     background-color: #28553F !important;
 }
 
-.tns-nav button {
+.promo .tns-nav button {
     background-color: #fff;
     width: 40px;
     height: 3px;
@@ -1031,7 +1031,7 @@ template {
     position: absolute;
     bottom: 19px;
     width: 470px;
-    background: rgba(0, 0, 0, 0.5411764706);
+    background: linear-gradient(177.34deg, rgba(0, 0, 0, 0.87) 2.22%, rgba(0, 0, 0, 0.5481) 97.78%);
     color: #fff;
     text-transform: uppercase;
     font-weight: 500;
@@ -1079,4 +1079,189 @@ template {
     padding-bottom: 50px;
     background: url("../img/stocks/bg.jpg") center center/cover no-repeat;
     min-height: 1136px;
+}
+
+.stocks__wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: 604px 601px;
+    gap: 34px;
+}
+
+.stocks__link {
+    display: block;
+    margin-top: 60px;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: right;
+    transition: all 0.4s;
+}
+
+.stocks__link span {
+    margin-left: 10px;
+    font-size: 10px;
+    vertical-align: middle;
+}
+
+.stocks__link:hover {
+    text-decoration: none;
+    color: #28553F;
+}
+
+.stocks__border {
+    position: absolute;
+    width: 534px;
+    min-height: 508px;
+    border: 1px solid #28553F;
+    top: 320px;
+    z-index: 1;
+}
+
+.stocks__title {
+    color: #fff;
+}
+
+.stocks__text {
+    position: absolute;
+    z-index: 2;
+    margin-top: 347px;
+    min-height: 438px;
+    width: 604px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.87) 62.37%, rgba(0, 0, 0, 0.2436) 100%);
+    padding: 51px 17px 47px 51px;
+}
+
+.stocks__divider {
+    width: 120px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.7843137255);
+}
+
+.stocks__title {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 43px;
+    line-height: 50px;
+}
+
+.stocks__descr {
+    margin-top: 34px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #fff;
+}
+
+.stocks__button {
+    display: block;
+    margin-top: 38px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.stocks__cards {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 282px);
+    grid-template-rows: repeat(2, minmax(400px, auto));
+    grid-auto-rows: minmax(400px, auto);
+    row-gap: 28px;
+    -moz-column-gap: 37px;
+    column-gap: 37px;
+}
+
+.stocks .tns-nav {
+    margin-top: 66px;
+    text-align: center;
+}
+
+.stocks .tns-nav-active {
+    background-color: #28553F !important;
+}
+
+.stocks .tns-nav button {
+    background-color: #fff;
+    width: 40px;
+    height: 3px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-right: 18px;
+}
+
+.card {
+    width: 282px;
+    min-height: 445px;
+    background: #fff;
+    padding: 15px 17px;
+    position: relative;
+}
+
+.card-action {
+    position: absolute;
+    top: 15px;
+    right: 17px;
+    background: rgba(255, 255, 255, 0.45);
+    padding: 7px 19px;
+}
+
+.card-img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 220px;
+    width: 247px;
+}
+
+.card-title {
+    margin-top: 26px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 10px;
+    color: #28553F;
+}
+
+.card-descr {
+    margin-top: 4px;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.card-prices {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.card-price {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #28553F;
+}
+
+.card-oldprice {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration-line: line-through;
+    color: #949981;
+}
+
+.card-button {
+    margin-top: 21px;
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    text-transform: capitalize;
+    padding: 10px 0px;
 }

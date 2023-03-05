@@ -96,28 +96,28 @@
     &__button {
         margin-right: 23px;
     }
-  
+    .tns-nav {
+   
+        position: absolute;
+        z-index: 100;
+        left: 15px;
+        bottom: 140px;
+        &-active {
+            background-color: $first-color !important;
+            } 
+        button {
+            background-color: #fff;
+            width: 40px;
+            height: 3px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            margin-right: 18px;
+           
+        }
+       
+        
+    }
 }
 
-.tns-nav {
-   
-    position: absolute;
-    z-index: 100;
-    left: 15px;
-    bottom: 140px;
-    &-active {
-        background-color: $first-color !important;
-        } 
-    button {
-        background-color: #fff;
-        width: 40px;
-        height: 3px;
-        border-radius: 5px;
-        outline: none;
-        border: none;
-        margin-right: 18px;
-       
-    }
-   
-    
-}
+

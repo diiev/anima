@@ -3,4 +3,109 @@
     padding-bottom: 50px;
     background: url('../img/stocks/bg.jpg') center center / cover no-repeat;
     min-height: 1136px;
+    
+    &__wrapper {
+        position: relative;
+        display: grid;
+        grid-template-columns: 604px 601px;
+        gap: 34px;
+      
+    } 
+    &__link {
+        display: block;
+        margin-top: 60px;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 25px;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: right;
+        transition: all .4s;
+        span {
+            margin-left: 10px;
+            font-size: 10px;
+            vertical-align: middle;
+        }
+        &:hover {
+            text-decoration: none;
+            color: $first-color;
+        }
+    }
+    &__border {
+        
+        position: absolute;
+        width: 534px;
+        min-height: 508px;
+        border: 1px solid $first-color;
+        top:320px;
+        z-index: 1;
+       
+    }
+    &__title {
+        color: #fff;
+    }
+    &__text {
+       
+       position: absolute;
+       z-index: 2;
+        margin-top: 347px;
+        min-height: 438px;
+        width: 604px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.87) 62.37%, rgba(0, 0, 0, 0.2436) 100%);
+        padding: 51px 17px 47px 51px;
+    }
+    &__divider {
+        width: 120px;
+        height: 1px;
+        background: #ffffffc8;
+    }
+    &__title {
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 43px;
+        line-height: 50px;
+    }
+    &__descr {
+        margin-top: 34px;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 26px;
+        color: #fff;
+    }
+    &__button {
+        display: block;
+        margin-top: 38px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    &__cards {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 282px);
+            grid-template-rows: repeat(2, minmax(400px, auto));
+            grid-auto-rows:  minmax(400px, auto);
+            row-gap: 28px;
+            column-gap: 37px;
+    }
+    .tns-nav {
+      margin-top: 66px;
+      text-align: center;
+      
+        &-active {
+            background-color: $first-color !important;
+            } 
+        button {
+            background-color: #fff;
+            width: 40px;
+            height: 3px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            margin-right: 18px;
+           
+        }
+       
+        
+    }
 }

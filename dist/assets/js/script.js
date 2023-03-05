@@ -8,6 +8,7 @@ var promoSlider = tns({
  
 }); 
 
+
 document.querySelector('.promo__slider_prev').addEventListener('click',function () {
   promoSlider.goTo('prev'); 
   const info = promoSlider.getInfo(),
@@ -61,4 +62,15 @@ document.querySelector('.details__slider_prev').addEventListener('click',functio
 });
 document.querySelector('.details__slider_next').addEventListener('click',function () {
   detailsSlider.goTo('next');
+});
+
+var stocks__cardslider = tns({
+  container: '.stocks__slider',
+  items: 1,
+  loop: false,
+  controls: false,
+  nav: true,
+  navPosition: "bottom",
+  speed: "800"
+ 
 });
