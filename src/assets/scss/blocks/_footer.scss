@@ -1,6 +1,169 @@
 .footer {
     min-height: 665px;
+    background: #000;
+    padding-bottom: 24px;
+
     &__top {
+        padding: 70px 0px;
         min-height: 367px;
+        background: url('../img/footer/bg.jpg') center center/cover no-repeat;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 33px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &__descr {
+        margin-top: 15px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+
+    }
+    &__form {
+        margin-top: 29px;
+      
+    }
+    &__inputname, &__inputphone
+    {
+       width: 240px;
+        height: 50px;
+        background: transparent;
+        margin-right: 20px;
+        padding: 15px 20px;
+        border: 1px solid rgba(243, 243, 243, 0.7);
+        outline: none;
+        color: #fff;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 135%;
+        color: #F3F3F3;
+        &::placeholder {
+            color: #fff;
+      }
+    }
+    &__inputpolicy {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #F3F3F3;
+        a {
+            color: #fff;
+            text-decoration: underline;
+        }
+        input {
+            width: 14px;
+            height: 14px;
+            margin-right: 10px;
+            background: transparent;
+            color: #000;
+        }
+      
+    }
+    &__button {
+        width: 240px;
+        height: 50px;
+        border: none;
+        background: #FFFFFF;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        color: #000000;
+        text-align: center;
+        transition: all .4s;
+        &:hover {
+            background: $first_color;
+            color: #fff;
+        }
+    }
+   
+    &__bottom {
+        padding: 40px 0px 34px 0px;
+        background: #000;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__menu {
+        display: flex;
+        gap: 188px;
+        &-title {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+
+        }
+        ul {
+            margin-top: 12px;
+            li {
+                list-style-type: none;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: rgba($color: #ffff, $alpha: .6);
+                margin-top: 4px;
+
+            }
+        }
+    }
+    &__contacts {
+        min-height: 195px;
+        &-title {
+            margin-top: 12px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+
+        }
+        &-phone, &-email {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #FFFFFF;
+            margin-top: 4px;
+            a {
+                color: rgba($color: #ffff, $alpha: .6);
+            }
+        }
+    }
+    &__icons {
+        margin-top: 24px;
+        a { 
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            font-size: 16px;
+            margin-right: 12px;
+            padding: 4px 8px;
+            background:rgba($color: #ffff, $alpha: .12);
+            border-radius: 4px;
+            color: #fff;
+            transition: all .4s;
+           &:hover {
+            color: $first_color;
+            text-decoration: none;
+           }
+        }
+    }
+    &__divider {
+        height: 1px;
+        width: 100%;
+        background:rgba($color: #ffff, $alpha: .15);
+    }
+    &__copyright {
+        margin-top: 20px;
+        text-align: center;
+        color: #fff;
     }
 }

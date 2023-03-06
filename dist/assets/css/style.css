@@ -1352,8 +1352,191 @@ template {
 
 .footer {
     min-height: 665px;
+    background: #000;
+    padding-bottom: 24px;
 }
 
 .footer__top {
+    padding: 70px 0px;
     min-height: 367px;
+    background: url("../img/footer/bg.jpg") center center/cover no-repeat;
+}
+
+.footer__title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer__descr {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.footer__form {
+    margin-top: 29px;
+}
+
+.footer__inputname, .footer__inputphone {
+    width: 240px;
+    height: 50px;
+    background: transparent;
+    margin-right: 20px;
+    padding: 15px 20px;
+    border: 1px solid rgba(243, 243, 243, 0.7);
+    outline: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+    color: #F3F3F3;
+}
+
+.footer__inputname::-moz-placeholder, .footer__inputphone::-moz-placeholder {
+    color: #fff;
+}
+
+.footer__inputname::placeholder, .footer__inputphone::placeholder {
+    color: #fff;
+}
+
+.footer__inputpolicy {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #F3F3F3;
+}
+
+.footer__inputpolicy a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer__inputpolicy input {
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+    background: transparent;
+    color: #000;
+}
+
+.footer__button {
+    width: 240px;
+    height: 50px;
+    border: none;
+    background: #FFFFFF;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    text-align: center;
+    transition: all 0.4s;
+}
+
+.footer__button:hover {
+    background: #28553F;
+    color: #fff;
+}
+
+.footer__bottom {
+    padding: 40px 0px 34px 0px;
+    background: #000;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__menu {
+    display: flex;
+    gap: 188px;
+}
+
+.footer__menu-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer__menu ul {
+    margin-top: 12px;
+}
+
+.footer__menu ul li {
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 4px;
+}
+
+.footer__contacts {
+    min-height: 195px;
+}
+
+.footer__contacts-title {
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer__contacts-phone, .footer__contacts-email {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-top: 4px;
+}
+
+.footer__contacts-phone a, .footer__contacts-email a {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__icons {
+    margin-top: 24px;
+}
+
+.footer__icons a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    margin-right: 12px;
+    padding: 4px 8px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+    color: #fff;
+    transition: all 0.4s;
+}
+
+.footer__icons a:hover {
+    color: #28553F;
+    text-decoration: none;
+}
+
+.footer__divider {
+    height: 1px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.footer__copyright {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
 }
