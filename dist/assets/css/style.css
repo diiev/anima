@@ -539,6 +539,20 @@ template {
     padding: 0;
 }
 
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+
 .container {
     width: 1280px;
     margin: 0 auto;
@@ -1539,4 +1553,10 @@ template {
     margin-top: 20px;
     text-align: center;
     color: #fff;
+}
+
+/* pages */
+.catalog {
+    padding-top: 54px;
+    margin-bottom: 60px;
 }
