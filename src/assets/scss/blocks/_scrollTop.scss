@@ -1,0 +1,33 @@
+.scrollTop {
+    cursor: pointer;
+    height: 55px;
+    width: 55px;
+    border-radius: 100%;
+    background: $first-color;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    visibility: visible;
+    opacity: 1;
+    z-index: 10;
+    transition: all .4s;
+
+    &:before {
+        transition: all .4s;
+    }
+    &:hover  {
+        background: #fff;
+        &:before {
+            color: $first-color;
+        }
+       
+    }
+    &_hide {
+        visibility: hidden;
+        opacity: 0;
+        z-index: -1;
+    }
+}

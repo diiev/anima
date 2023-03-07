@@ -80,6 +80,7 @@
         line-height: 18px;
     }
     &__cards {
+            cursor: pointer;
             margin-top: 20px;
             display: grid;
             grid-template-columns: repeat(2, 282px);

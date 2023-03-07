@@ -42,6 +42,10 @@ html, body {
 @import 'blocks/card';
 @import 'blocks/ideas';
 @import 'blocks/footer';
+@import 'blocks/scrollTop';
 
 /* pages */
 @import 'blocks/catalog/catalog';
+@import 'blocks/page-divider';
+@import 'blocks/breadcumbs';
+@import 'blocks/pagination';
