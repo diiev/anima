@@ -1482,10 +1482,10 @@ html, body {
 
 .footer__menu ul {
     margin-top: 12px;
+    list-style-type: none;
 }
 
-.footer__menu ul li {
-    list-style-type: none;
+.footer__menu ul li a {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
@@ -1641,45 +1641,101 @@ html, body {
 
 .catalog__aside-menu {
     background: #F9F9F9;
+    padding: 0 5px;
 }
 
-.catalog__aside-link, .catalog__aside-sublink {
+.catalog__aside-link, .catalog__aside-sublink, .catalog__aside-subsublink {
     font-weight: 500;
     line-height: 55px;
     color: #9C9C9C;
-    padding: 20px 13px 20px 15px;
     display: block;
-    border-bottom: 1px solid #E5E5E5;
     position: relative;
 }
 
-.catalog__aside-link:hover, .catalog__aside-sublink:hover {
+.catalog__aside-link:hover, .catalog__aside-sublink:hover, .catalog__aside-subsublink:hover {
     text-decoration: none;
     color: #28553F;
 }
 
-.catalog__aside-link span, .catalog__aside-sublink span {
+.catalog__aside-link span, .catalog__aside-sublink span, .catalog__aside-subsublink span {
     display: block;
-    top: 20px;
+    top: 10px;
     transform: rotate(-90deg);
     position: absolute;
-    right: 15px;
 }
 
 .catalog__aside-link {
+    padding: 10px 0px 10px 15px;
     font-size: 16px;
 }
 
 .catalog__aside-link span {
     font-size: 10px;
+    right: 15px;
 }
 
 .catalog__aside-sublink {
+    padding: 0px 0px 0px 15px;
     font-size: 14px;
 }
 
 .catalog__aside-sublink span {
     font-size: 8px;
+    top: 0;
+    right: 15px;
+}
+
+.catalog__aside-subsublink {
+    padding: 0px 0px 0px 35px;
+    font-size: 14px;
+}
+
+.catalog__aside-subsublink span {
+    left: 15px;
+    top: -1px;
+    font-size: 8px;
+}
+
+.catalog__aside-sublists {
+    transition: height, margin-top 0.6s;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    margin-top: -10px;
+}
+
+.catalog__aside-sublists_active {
+    margin-top: 0px;
+    opacity: 1;
+    visibility: visible;
+    height: inherit;
+}
+
+.catalog__aside-subsublists {
+    transition: height, margin-top 0.4s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    margin-top: -5px;
+}
+
+.catalog__aside-subsublists_active {
+    margin-top: 0px;
+    opacity: 1;
+    visibility: visible;
+    height: inherit;
+}
+
+.catalog__aside-list, .catalog__aside-sublist {
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.catalog__aside-list:last-child, .catalog__aside-sublist:last-child {
+    border: none;
+}
+
+.catalog__aside-sublist:first-child {
+    border-top: 1px solid #E5E5E5;
 }
 
 .catalog__cards {
@@ -1720,6 +1776,11 @@ html, body {
 
 .catalog__pagination {
     margin-top: 60px;
+}
+
+.catalog__arrow_active:before {
+    display: block;
+    transform: rotate(90deg);
 }
 
 .page__divider {
@@ -1819,4 +1880,43 @@ html, body {
 
 .pagination span-current, .pagination__link-current {
     color: #28553F;
+}
+
+._404 {
+    padding-top: 116px;
+    padding-bottom: 379px;
+}
+
+._404__img {
+    display: block;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin: -116px auto 0px auto;
+}
+
+._404__title {
+    font-weight: 400;
+    font-size: 283px;
+    line-height: 332px;
+    text-align: center;
+    color: #28553F;
+}
+
+._404__text {
+    margin-top: 59px;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+._404__button {
+    display: block;
+    margin: 65px auto 0px auto;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
 }

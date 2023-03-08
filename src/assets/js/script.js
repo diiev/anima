@@ -29,9 +29,47 @@ const btnUp = {
       });
     }
   }
-}
+} 
 
 btnUp.addEventListener();
+
+const arrow = document.querySelectorAll('.advantages__spoiler-arrow');
+const descr = document.querySelectorAll('.advantages__spoiler-descr');
+for (let i = 0; i < arrow.length; i++) {
+  arrow[i].addEventListener('click', function(){
+    if (arrow[i] == this) {
+      arrow[i].classList.toggle('advantages__spoiler-arrow_active');
+      descr[i].classList.toggle('advantages__spoiler-descr_active');
+    }
+    else {
+      arrow[i].classList.remove('advantages__spoiler-arrow_active');
+      descr[i].classList.remove('advantages__spoiler-descr_active');
+    }
+ 
+  })
+} 
+
+const catalogAsideLinks = document.querySelectorAll('.catalog__aside-link');
+const catalogAsideSubLinks = document.querySelectorAll('.catalog__aside-sublink');;
+    for (let i = 0; i < catalogAsideLinks.length; i++) {
+      catalogAsideLinks[i].addEventListener('click', function(e){ 
+        if(catalogAsideLinks[i].nextElementSibling != null) 
+        e.preventDefault(); 
+        catalogAsideLinks[i].nextElementSibling.classList.toggle('catalog__aside-sublists_active');
+        catalogAsideLinks[i].lastElementChild.classList.toggle('catalog__arrow_active');
+      })
+    }
+    for (let i = 0; i < catalogAsideSubLinks.length; i++) {
+      catalogAsideSubLinks[i].addEventListener('click', function(e){ 
+        if(catalogAsideSubLinks[i].nextElementSibling != null) 
+        e.preventDefault();
+        catalogAsideSubLinks[i].nextElementSibling.classList.toggle('catalog__aside-subsublists_active');
+        catalogAsideSubLinks[i].lastElementChild.classList.toggle('catalog__arrow_active');
+       
+      })
+    }
+     
+
 
 const promoSlider = tns({
   container: '.promo__slider',
@@ -64,21 +102,7 @@ document.querySelector('.promo__slider_prev').classList.remove('disabled');
 
 
 
-const arrow = document.querySelectorAll('.advantages__spoiler-arrow');
-const descr = document.querySelectorAll('.advantages__spoiler-descr');
-for (let i = 0; i < arrow.length; i++) {
-  arrow[i].addEventListener('click', function(){
-    if (arrow[i] == this) {
-      arrow[i].classList.toggle('advantages__spoiler-arrow_active');
-      descr[i].classList.toggle('advantages__spoiler-descr_active');
-    }
-    else {
-      arrow[i].classList.remove('advantages__spoiler-arrow_active');
-      descr[i].classList.remove('advantages__spoiler-descr_active');
-    }
- 
-  })
-}
+
 
 const detailsSlider = tns({
   container: '.details__slider',
