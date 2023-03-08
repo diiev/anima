@@ -45,8 +45,9 @@ html, body {
 @import 'blocks/scrollTop';
 
 /* pages */
-@import 'blocks/catalog/catalog';
+@import 'blocks/catalog';
 @import 'blocks/page-divider';
 @import 'blocks/breadcumbs';
 @import 'blocks/pagination';
 @import 'blocks/404';
+@import 'blocks/good';

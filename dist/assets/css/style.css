@@ -1920,3 +1920,7 @@ html, body {
     text-align: center;
     text-transform: uppercase;
 }
+
+.good {
+    padding-top: 24px;
+}
