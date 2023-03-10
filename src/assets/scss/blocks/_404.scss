@@ -1,0 +1,35 @@
+._404 {
+      padding-top: 116px;
+      padding-bottom: 379px;
+      &__img {
+        display: block; 
+        object-fit:  cover;
+        margin: -116px auto 0px auto;
+      }
+      &__title {
+        font-weight: 400;
+        font-size: 283px;
+        line-height: 332px;
+        text-align: center;
+        color: $first_color;
+      }
+      &__text {
+        margin-top: 59px;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 70px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      &__button {
+        display: block;
+        margin:  65px auto 0px auto;
+        font-weight: 500;
+        font-size: 19px;
+        line-height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+ 
+}

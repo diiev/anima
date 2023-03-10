@@ -1,0 +1,31 @@
+.breadcumbs {
+    &__link {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #9C9C9C;
+        transition: all .4s;
+        &:hover {
+            text-decoration: none;
+            color: $first_color;
+        }
+    }
+    &__arrow {
+        color: #9C9C9C;
+        font-size: 13px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    &__sublink {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        transition: all .4s;
+        color:$first_color;
+        &:hover {
+            text-decoration: none;
+            color: #9C9C9C;
+        }
+
+    }
+}

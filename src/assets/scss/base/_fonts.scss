@@ -7,71 +7,58 @@
   font-display: block;
 }
 [class^="icon-"], [class*=" icon-"] {
+  font-family: icomoon;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ 
 }
-.icon-right-arrow_long:before {
-  font-family: 'icomoon';
-  content: "\e909";
-
+.icon-up:before {
+  content: "\e90e";
+  color: #fff;
 }
-.icon-solid-arrow:before {
-  font-family: 'icomoon';
-  content: "\e90b";
-
-}
-.icon-spoiler-arrow:before {
-  font-family: 'icomoon';
-  content: "\e90c";
-
+.icon-arrow-carousel:before {
+  content: "\e905";
 }
 .icon-left-arrow:before {
-  font-family: 'icomoon';
-  content: "\e900";
-
+  content: "\e906";
 }
 .icon-phone:before {
-  font-family: 'icomoon';
-  content: "\e901";
-
+  content: "\e907";
 }
 .icon-right-arrow:before {
-  font-family: 'icomoon';
-  content: "\e902";
-
+  content: "\e908";
+}
+.icon-right-arrow_long:before {
+  content: "\e909";
 }
 .icon-search:before {
-  font-family: 'icomoon';
-  content: "\e903";
-
+  content: "\e90a";
 }
-.icon-whatsapp:before {
-  font-family: 'icomoon';
-  content: "\e904";
-
+.icon-solid-arrow:before {
+  content: "\e90b";
+}
+.icon-spoiler-arrow:before {
+  content: "\e90c";
+}
+.icon-whatsapp1:before {
+  content: "\e90d";
 }
 .icon-twitter:before {
-  font-family: 'icomoon';
   content: "\ea96";
 }
 .icon-checkmark:before {
-  font-family: 'icomoon';
   content: "\ea11";
 }
 .icon-facebook:before {
-  font-family: 'icomoon';
   content: "\ea90";
 }
 .icon-instagram:before {
-  font-family: 'icomoon';
   content: "\ea92";
 }
 .icon-youtube:before {
-  font-family: 'icomoon';
   content: "\ea9d";
 }
 .icon-pinterest:before {
-   font-family: 'icomoon';
   content: "\ead1";
 }

@@ -9,6 +9,19 @@
     font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
+    
+}
+html, body {
+   height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main {
+    flex-grow: 1;
 }
 
 .container {
@@ -17,6 +30,7 @@
     padding: 0 15px;
     position: relative;
 }
+
 @import 'blocks/header';
 @import 'blocks/buttons';
 @import 'blocks/promo';
@@ -25,3 +39,15 @@
 @import 'blocks/title';
 @import 'blocks/details';
 @import 'blocks/stocks';
+@import 'blocks/card';
+@import 'blocks/ideas';
+@import 'blocks/footer';
+@import 'blocks/scrollTop';
+
+/* pages */
+@import 'blocks/catalog';
+@import 'blocks/page-divider';
+@import 'blocks/breadcumbs';
+@import 'blocks/pagination';
+@import 'blocks/404';
+@import 'blocks/good';
