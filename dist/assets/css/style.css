@@ -1924,3 +1924,35 @@ html, body {
 .good {
     padding-top: 24px;
 }
+
+.good__breadcumbs {
+    margin-top: 24px;
+    margin-bottom: 28px;
+}
+
+.good__header {
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.good__title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+}
+
+.good__model, .good__id {
+    color: #28553F;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.good__model span, .good__id span {
+    color: #9C9C9C;
+}
+
+.good__id {
+    margin-top: 6px;
+}

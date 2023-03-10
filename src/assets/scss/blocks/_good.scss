@@ -1,3 +1,31 @@
 .good {
     padding-top: 24px;
+    &__breadcumbs {
+        margin-top: 24px;
+        margin-bottom: 28px;
+    }
+    &__header {
+        padding: 16px 0;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 52px;
+    }
+    &__model,
+    &__id {
+        color: $first_color;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        span {
+            color: #9C9C9C;
+        }
+    }
+    &__id {
+        margin-top: 6px;
+    }
 }
