@@ -26,11 +26,6 @@
         "gulp-webp": "^4.0.1",
         "panini": "^1.7.2",
         "sass": "^1.58.0"
-<<<<<<< HEAD
-    },
-    "dependencies": {
-        "@fancyapps/ui": "^5.0.6"
-=======
->>>>>>> 6b1e9ab520c075f6971be1b57ee2a66338f45de3
     }
+ 
 }
