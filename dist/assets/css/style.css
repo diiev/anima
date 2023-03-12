@@ -845,6 +845,10 @@ html, body {
     border: none;
 }
 
+.promo__button:hover {
+    border: none;
+}
+
 .promo .tns-nav {
     position: absolute;
     z-index: 100;

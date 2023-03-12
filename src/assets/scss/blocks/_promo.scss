@@ -97,6 +97,9 @@
     &__button {
         margin-right: 23px;
         border: none;
+        &:hover {
+            border: none;
+        }
     }
     .tns-nav {
    
