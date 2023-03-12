@@ -8,10 +8,12 @@
     text-transform: uppercase;
     transition: all .4s;
     color: #fff;
+    border: 1px solid $first-color;
     &:hover {
         color: $first-color;
         text-decoration: none;
         background: #fff;
+        border: 1px solid #CACACA
     }
     &_grey {
         background: #141414;

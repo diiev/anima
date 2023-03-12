@@ -49,6 +49,7 @@
         color: #9C9C9C;
         margin-right: 20px;
         transition: all .4s;
+        font-feature-settings: 'pnum' on, 'lnum' on;
         &:hover {
              text-decoration: none;
              color: $first_color;

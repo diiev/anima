@@ -15,7 +15,6 @@
 }
 .icon-up:before {
   content: "\e90e";
-  color: #fff;
 }
 .icon-arrow-carousel:before {
   content: "\e905";
@@ -41,14 +40,21 @@
 .icon-spoiler-arrow:before {
   content: "\e90c";
 }
-.icon-whatsapp1:before {
-  content: "\e90d";
+.icon-check:before {
+  content: "\e90f";
+}
+.icon-whatsapp:before {
+  content: "\e904";
 }
 .icon-twitter:before {
   content: "\ea96";
 }
 .icon-checkmark:before {
   content: "\ea11";
+}
+.icon-check-circle-rounded:before {
+  content: "\e900";
+  color: #28553f;
 }
 .icon-facebook:before {
   content: "\ea90";

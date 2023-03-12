@@ -46,8 +46,10 @@ html, body {
 
 /* pages */
 @import 'blocks/catalog';
+@import 'blocks/action';
 @import 'blocks/page-divider';
 @import 'blocks/breadcumbs';
 @import 'blocks/pagination';
 @import 'blocks/404';
 @import 'blocks/good';
+@import 'blocks/recomend';

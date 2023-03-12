@@ -4,13 +4,6 @@
     background: #fff;
     padding: 15px 17px;
     position: relative;
-    &-action {
-        position: absolute;
-        top: 15px;
-        right: 17px;
-        background: rgba(255,255,255, .45);
-        padding: 7px 19px;
-    }
     &-img {
         object-fit: cover;
         height: 220px;
@@ -23,6 +16,7 @@
         line-height: 22px;
         margin-left: 10px;
         color: $first-color;
+        font-feature-settings: 'pnum' on, 'lnum' on;
     }
     &-descr {
         margin-top: 4px;
@@ -30,12 +24,14 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 22px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
     }
     &-prices {
         display: flex;
         justify-content: space-between;
         margin-top: 20px;
         margin-left: 10px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
     }
     &-price {
         font-weight: 700;

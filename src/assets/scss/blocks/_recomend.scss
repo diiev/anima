@@ -1,0 +1,57 @@
+.recomend {
+    padding-top: 60px;
+    padding-bottom: 64px;
+    background: #F9F9F9;
+    position: relative;
+
+    &__title {
+        margin-top: 9px;
+    }
+
+    &__slider {
+        margin-top: 65px;
+
+        &-btns {
+            right: 15px;
+            top: 20px;
+
+            button {
+                border: 1px solid #E5E5E5;
+                color: #B1B1B1;
+
+                &:hover {
+                    background: $first-color;
+                    color: #fff;
+                }
+            }
+
+        }
+
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(4, 282px);
+        column-gap: 40px;
+    }
+
+    .tns-nav {
+        margin-top: 66px;
+        text-align: center;
+        button {
+            background-color: #B3B7BC;
+            width: 40px;
+            height: 3px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            margin-right: 18px;
+        }
+        &-active {
+            background-color: $first-color !important;
+        }
+
+      
+
+    }
+}

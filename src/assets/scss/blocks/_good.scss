@@ -1,31 +1,413 @@
 .good {
     padding-top: 24px;
+    padding-bottom: 104px;
+
     &__breadcumbs {
         margin-top: 24px;
         margin-bottom: 28px;
     }
+
     &__header {
         padding: 16px 0;
         display: flex;
         justify-content: space-between;
 
     }
+
     &__title {
         font-weight: 400;
         font-size: 40px;
         line-height: 52px;
     }
+
     &__model,
     &__id {
         color: $first_color;
         font-weight: 400;
         font-size: 16px;
         line-height: 26px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+
         span {
             color: #9C9C9C;
+            
         }
     }
+
     &__id {
         margin-top: 6px;
+    }
+
+    &__wrapper {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 602px 633px;
+        column-gap: 35px;
+    }
+
+    &__subwrapper {
+        position: relative;
+
+    }
+
+    &__slider {
+        min-height: 407px;
+
+        &-navigation {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        &_prev,
+        &_next {
+            display: block;
+            margin-top: 23px;
+            width: 28px;
+            background: #F9F9F9;
+            color: #6F6F6F;
+            border: none;
+            outline: none;
+            transition: all .4s;
+
+            &:hover {
+                background: $first-color;
+                color: #fff;
+                outline: none;
+                border: none;
+            }
+
+            &:focus {
+                outline: none;
+                border: none;
+            }
+        }
+
+        &_prev {
+            margin-right: 16px;
+
+            &::before {
+                display: block;
+                transform: rotate(360deg);
+            }
+        }
+
+        &_next {
+            margin-left: 16px;
+        }
+
+        &_dots {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 23px;
+
+            li {
+                transition: all .4s;
+                margin-top: 5px;
+                margin-right: 5px;
+                margin-left: 5px;
+                cursor: pointer;
+
+                &:hover {
+                    img {
+                        display: block;
+                        filter: brightness(0.5);
+                    }
+                }
+
+                img {
+                    transition: all .4s;
+                    width: 117px;
+                    height: 103px;
+                    object-fit: cover;
+                }
+            }
+
+            .tns-nav-active {
+                outline: 1px solid red;
+
+            }
+        }
+
+        &-item {
+            position: relative;
+        }
+
+        &-img {
+            height: 407px;
+            width: 100%;
+            object-fit: cover;
+            filter: brightness(0.8);
+        }
+
+        &-action {
+            z-index: 1;
+            top: 0;
+            right: 0;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 23px;
+        }
+
+    }
+
+    &__access {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 29px;
+        color: $first_color;
+
+        span {
+            margin-right: 8px;
+            vertical-align: top;
+            display: inline-block;
+            font-size: 22px;
+            color: $first_color;
+        }
+    }
+
+    &__prices {
+        margin-top: 36px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__price {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 42px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+
+    }
+
+    &__nds {
+        margin-top: 7px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: #9C9C9C;
+    }
+
+    &__oldprice {
+        margin-left: 14px;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 27px;
+        text-decoration-line: line-through;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #9C9C9C;
+
+    }
+
+    &__discount {
+        margin-left: 26px;
+        width: 72px;
+        height: 41px;
+        background: $first_color;
+        color: #fff;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 26px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        text-align: center;
+        padding: 7.5px 0;
+    }
+
+    &__counts {
+        margin-top: 35px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__count {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    &__counter {
+        border: none;
+        outline: 1px solid #9C9C9C;
+        margin-left: 23px;
+        width: 74px;
+        height: 40px;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 32px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        padding: 12px 16px;
+    }
+
+    &__specification {
+        margin-top: 31px;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 20px;
+
+        span {
+            display: inline-block;
+            margin-left: 3px;
+            color: $first-color;
+
+
+            &:before {
+                font-size: 13px;
+                display: block;
+                transform: rotate(90deg);
+
+            }
+        }
+
+        &__active {
+            color: $first_color;
+        }
+
+        ul {
+            margin-top: 15px;
+            margin-left: 18px;
+        }
+
+        li {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 47px;
+            list-style-type: none;
+            padding: 0 11px;
+            margin-bottom: 5px;
+            display: flex;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+
+            &:nth-child(odd) {
+                background: #F9F9F9;
+            }
+
+            div {
+                width: 168px;
+            }
+
+            span {
+
+                line-height: 20px;
+                font-size: 13px;
+                padding: 10px 0;
+            }
+        }
+    }
+
+    &__btns {
+        margin-top: 40px;
+        display: flex;
+        gap: 35px;
+
+
+    }
+
+    &__btn {
+
+        &-first,
+        &-second {
+            text-transform: inherit;
+            padding: 15px 0px;
+        }
+
+        &-second {
+            width: 162px;
+            background: #FFFFFF;
+            border: 1px solid #CACACA;
+            color: $first_color;
+
+            &:hover {
+                background: $first_color;
+                color: #fff;
+            }
+        }
+    }
+
+    &__descr {
+        margin-top: 75px;
+
+        &-title {
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 26px;
+
+            span {
+                font-size: 12px;
+                margin-left: 3px;
+                color: $first-color;
+                vertical-align: top;
+
+                &:before {
+                    display: inline-block;
+                    transform: rotate(90deg);
+                }
+            }
+        }
+
+        &-text {
+            margin-top: 27px;
+            padding: 0 126px 0 0;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+        }
+    }
+
+    &__divider {
+        margin-top: 27px;
+        width: 100%;
+        height: 4px;
+        background: #EDF3F3;
+        position: relative;
+
+        div {
+            height: 100%;
+            position: absolute;
+            background: $first-color;
+            width: 12%;
+        }
+    }
+
+    &__order {
+        margin-top: 58px;
+        display: grid;
+        grid-template-columns: repeat(3, 425px);
+        grid-template-rows: minmax(110px);
+
+        &-title {
+            margin-left: 30px;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 26px;
+
+            span {
+                position: relative;
+                font-size: 25px;
+
+                &::before {
+                    position: absolute;
+                    right: 10px;
+                    top: 3px;
+                }
+            }
+
+        }
+
+        &-divider {
+            div {
+                width: 132px;
+            }
+        }
+
+        &-text {
+            margin-top: 20px;
+            padding-right: 50px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+        }
     }
 }
