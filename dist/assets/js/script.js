@@ -62,7 +62,6 @@ for (let i = 0; i < arrow.length; i++) {
     })
   }
 }
-
 const catalogAsideLinks = document.querySelectorAll('.catalog__aside-link');
 const catalogAsideSubLinks = document.querySelectorAll('.catalog__aside-sublink');;
 asideMenu(catalogAsideLinks, 'catalog__aside-sublists_active');
