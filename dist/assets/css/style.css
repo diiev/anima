@@ -605,7 +605,7 @@ html, body {
     opacity: 0;
     z-index: -1;
     position: absolute;
-    right: 45px;
+    right: 40px;
     top: -5px;
     transition: all 0.5s;
 }
@@ -903,7 +903,7 @@ html, body {
 }
 
 .advantages__spoiler-arrow {
-    transition: all 0.7s;
+    transition: transform 0.6s;
 }
 
 .advantages__spoiler-arrow_active {
@@ -965,9 +965,9 @@ html, body {
 }
 
 .advantages__spoiler-descr {
-    margin-top: -20px;
+    margin-top: 0px;
     opacity: 0;
-    z-index: -1;
+    visibility: hidden;
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
@@ -977,6 +977,7 @@ html, body {
 .advantages__spoiler-descr_active {
     margin-top: 10px;
     opacity: 1;
+    visibility: visible;
 }
 
 .advantages__spoiler-descr_right {
@@ -1523,6 +1524,7 @@ html, body {
     line-height: 26px;
     color: #FFFFFF;
     margin-top: 4px;
+    font-feature-settings: "pnum" on, "lnum" on;
 }
 
 .footer__contacts-phone a, .footer__contacts-email a {
@@ -1561,6 +1563,7 @@ html, body {
     margin-top: 20px;
     text-align: center;
     color: #fff;
+    font-feature-settings: "pnum" on, "lnum" on;
 }
 
 .scrollTop {

@@ -26,7 +26,7 @@
        
         }
         &-arrow {
-            transition: all .7s;
+            transition: transform .6s;
             &_active {
                     transform: rotate(-180deg);
             }
@@ -81,9 +81,9 @@
             padding: 10px 0;
         }
         &-descr {
-            margin-top: -20px;
+            margin-top: 0px;
             opacity: 0;
-            z-index: -1;
+            visibility: hidden;
             font-weight: 500;
             font-size: 12px;
             line-height: 14px; 
@@ -91,6 +91,7 @@
             &_active {
                 margin-top: 10px;
                 opacity: 1;
+                visibility: visible;
             }
             &_right {
                 text-align: right;

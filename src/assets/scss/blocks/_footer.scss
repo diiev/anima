@@ -135,7 +135,8 @@
             line-height: 26px;
             color: #FFFFFF;
             margin-top: 4px;
-            a {
+            font-feature-settings: "pnum" on,"lnum" on;
+            a {    
                 color: rgba($color: #ffff, $alpha: .6);
             }
         }
@@ -168,5 +169,6 @@
         margin-top: 20px;
         text-align: center;
         color: #fff;
+        font-feature-settings: "pnum" on,"lnum" on;
     }
 }

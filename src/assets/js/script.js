@@ -38,7 +38,11 @@ btnUp.addEventListener();
 const arrow = document.querySelectorAll('.advantages__spoiler-arrow');
 const descr = document.querySelectorAll('.advantages__spoiler-descr');
 for (let i = 0; i < arrow.length; i++) {
-  arrow[i].addEventListener('click', function(){  
+  arrow[i].addEventListener('click', function(){
+      if(document.querySelector('.advantages__spoiler-arrow_active') !== null && document.querySelector('.advantages__spoiler-arrow_active') !== arrow[i]){
+        document.querySelector('.advantages__spoiler-arrow_active').classList.remove('advantages__spoiler-arrow_active');
+        document.querySelector('.advantages__spoiler-descr_active').classList.remove('advantages__spoiler-descr_active');
+      }
       arrow[i].classList.toggle('advantages__spoiler-arrow_active');
       descr[i].classList.toggle('advantages__spoiler-descr_active');
   })
