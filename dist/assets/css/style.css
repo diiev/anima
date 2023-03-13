@@ -558,7 +558,7 @@ html, body {
 }
 
 .container {
-    width: 1280px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 15px;
     position: relative;
@@ -1666,6 +1666,7 @@ html, body {
     color: #9C9C9C;
     display: block;
     position: relative;
+    transition: all 0.6s ease;
 }
 
 .catalog__aside-link:hover, .catalog__aside-sublink:hover, .catalog__aside-subsublink:hover {
@@ -1674,6 +1675,7 @@ html, body {
 }
 
 .catalog__aside-link span, .catalog__aside-sublink span, .catalog__aside-subsublink span {
+    transition: all 0.6s ease;
     display: block;
     top: 10px;
     transform: rotate(-90deg);
@@ -1713,7 +1715,7 @@ html, body {
 }
 
 .catalog__aside-sublists {
-    transition: height, margin-top 0.6s;
+    transition: height, margin-top 0.6s ease;
     opacity: 0;
     visibility: hidden;
     height: 0;
@@ -1728,7 +1730,7 @@ html, body {
 }
 
 .catalog__aside-subsublists {
-    transition: height, margin-top 0.4s ease-in-out;
+    transition: height, margin-top 0.6s ease;
     opacity: 0;
     visibility: hidden;
     height: 0;
@@ -1795,7 +1797,11 @@ html, body {
 }
 
 .catalog__arrow_active:before {
-    display: block;
+    transition: all 0.6s ease;
+}
+
+.catalog__arrow_active:before {
+    display: inline-block;
     transform: rotate(90deg);
 }
 

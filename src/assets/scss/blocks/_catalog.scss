@@ -59,12 +59,14 @@
             color: #9C9C9C;
             display: block;
             position: relative;
+            transition: all .6s ease;
             &:hover {
                 text-decoration: none;
                 color: $first_color;
             }
 
-            span {
+            span { 
+                transition: all .6s ease;
                 display: block;
                 top: 10px;
                 transform: rotate(-90deg);
@@ -103,6 +105,7 @@
             font-size: 14px;
 
             span {
+                
                 left: 15px;
                 top: -1px;
                 font-size: 8px;
@@ -111,7 +114,7 @@
         }
 
         &-sublists {
-            transition: height, margin-top .6s;
+            transition: height, margin-top .6s ease;
             opacity: 0;
             visibility: hidden;
             height: 0;
@@ -127,7 +130,7 @@
         }
 
         &-subsublists {
-            transition: height, margin-top .4s ease-in-out;
+            transition: height, margin-top .6s ease;
             opacity: 0;
             visibility: hidden;
             height: 0;
@@ -198,12 +201,15 @@
     }
 
     &__arrow {
-
+        
         &_active {
-
+            &:before {
+                transition: all .6s ease;
+            }
+            
             &:before {
 
-                display: block;
+                display: inline-block;
                 transform: rotate(90deg);
             }
 

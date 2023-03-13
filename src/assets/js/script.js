@@ -1,7 +1,9 @@
- 
+  
+  // search
   document.querySelector('.header__search').addEventListener('click', function(){
   document.querySelector('.header__form').classList.toggle('header__form-active');
 });
+
 // Кнопка навверх
 const btnUp = {
   el: document.querySelector('.scrollTop'),
@@ -35,6 +37,7 @@ const btnUp = {
 
 btnUp.addEventListener();
 
+// spoiler
 const arrow = document.querySelectorAll('.advantages__spoiler-arrow');
 const descr = document.querySelectorAll('.advantages__spoiler-descr');
 for (let i = 0; i < arrow.length; i++) {
@@ -48,11 +51,12 @@ for (let i = 0; i < arrow.length; i++) {
   })
  
 } 
- function clickMenu (element, className) {
+// aside menu
+ function asideMenu (element, className) {
   for (let i = 0; i < element.length; i++) {
     element[i].addEventListener('click', function(e){ 
       if(element[i].nextElementSibling != null) 
-      e.preventDefault(); 
+      e.preventDefault();  
       element[i].nextElementSibling.classList.toggle(className);
       element[i].lastElementChild.classList.toggle('catalog__arrow_active');
     })
@@ -60,9 +64,10 @@ for (let i = 0; i < arrow.length; i++) {
 }
 const catalogAsideLinks = document.querySelectorAll('.catalog__aside-link');
 const catalogAsideSubLinks = document.querySelectorAll('.catalog__aside-sublink');;
-clickMenu(catalogAsideLinks, 'catalog__aside-sublists_active');
-clickMenu(catalogAsideSubLinks, 'catalog__aside-subsublists_active');
+asideMenu(catalogAsideLinks, 'catalog__aside-sublists_active');
+asideMenu(catalogAsideSubLinks, 'catalog__aside-subsublists_active');
  
+// sliders 
 const IsrecomendSlider = document.querySelector('.recomend__slider');
 if (IsrecomendSlider != null) {
   const recomendSlider = tns({
@@ -101,7 +106,9 @@ if (IsgoodSlider != null) {
   document.querySelector('.good__slider_next').addEventListener('click',function () {
     goodSlider.goTo('next');
   });
-}
+} 
+const IspromoSlider = document.querySelector('.promo__slider');
+if (IspromoSlider != null) {
 const promoSlider = tns({
   container: '.promo__slider',
   items: 1,
@@ -129,8 +136,10 @@ document.querySelector('.promo__slider_next').addEventListener('click',function 
 document.querySelector('.promo__slider_next').classList.add('disabled');
 document.querySelector('.promo__slider_prev').classList.remove('disabled');
 }); 
+}
 
-
+const IsdetailsSlider = document.querySelector('.details__slider');
+if (IsdetailsSlider != null) {
 const detailsSlider = tns({
   container: '.details__slider',
   items: 1,
@@ -146,8 +155,10 @@ document.querySelector('.details__slider_prev').addEventListener('click',functio
 document.querySelector('.details__slider_next').addEventListener('click',function () {
   detailsSlider.goTo('next');
 });
-
-const stocks__cardslider = tns({
+}
+const IsstocksSlider = document.querySelector('.stocks__slider');
+if (IsstocksSlider != null) {
+const stocksSlider = tns({
   container: '.stocks__slider',
   items: 1,
   loop: false,
@@ -157,8 +168,11 @@ const stocks__cardslider = tns({
   navPosition: "bottom",
   speed: "800"
  
-}); 
-const ideas__slider = tns({
+});  
+}
+const IsideasSlider = document.querySelector('.ideas__slider');
+if (IsideasSlider != null) {
+const ideasSlider = tns({
   container: '.ideas__slider',
   items: 1,
   loop: false,
@@ -169,9 +183,10 @@ const ideas__slider = tns({
  
 });  
 document.querySelector('.ideas__slider_prev').addEventListener('click',function () {
-  ideas__slider.goTo('prev');
+  ideasSlider.goTo('prev');
 });
 document.querySelector('.ideas__slider_next').addEventListener('click',function () {
-  ideas__slider.goTo('next');
-});
+  ideasSlider.goTo('next');
+}); 
+}
 
