@@ -244,31 +244,51 @@
         margin-top: 31px;
         font-weight: 400;
         font-size: 17px;
-        line-height: 20px;
+        line-height: 20px;  
+
 
         span {
             display: inline-block;
             margin-left: 3px;
             color: $first-color;
+            cursor: pointer;
 
-
+        
+           
+        } 
+        &-arrow { 
             &:before {
                 font-size: 13px;
                 display: block;
-                transform: rotate(90deg);
+                transform: rotate(-90deg);
 
+            } 
+            &_active {
+                &:before {
+                    display: block;
+                    transform: rotate(90deg);
+                }
             }
         }
 
         &__active {
             color: $first_color;
+            display: block;
         }
 
         ul {
-            margin-top: 15px;
+            height: 0;
+            opacity: 0;
+            margin-top: 0px;
             margin-left: 18px;
+            transition: margin-top .4s ease;
+          
         }
-
+       ul.active {
+           margin-top: 15px;
+           height: inherit;
+           opacity: 1;
+       }
         li {
             font-weight: 400;
             font-size: 15px;
@@ -293,6 +313,7 @@
                 font-size: 13px;
                 padding: 10px 0;
             }
+            
         }
     }
 
@@ -332,26 +353,37 @@
             font-weight: 600;
             font-size: 22px;
             line-height: 26px;
-
-            span {
-                font-size: 12px;
-                margin-left: 3px;
-                color: $first-color;
-                vertical-align: top;
-
+        }
+        &-arrow {
+            font-size: 12px;
+            margin-left: 3px;
+            color: $first-color;
+            vertical-align: top;
+            cursor: pointer;
+            &:before {
+                display: inline-block;
+                transform: rotate(-90deg);
+            } 
+            &_active {
                 &:before {
-                    display: inline-block;
                     transform: rotate(90deg);
-                }
+                }  
             }
         }
-
         &-text {
-            margin-top: 27px;
+            height: 0;
+            margin-top:0px;
+            opacity: 0;
+            transition: margin-top .4s ease;
             padding: 0 126px 0 0;
             font-weight: 400;
             font-size: 16px;
-            line-height: 30px;
+            line-height: 30px; 
+            &_active {
+                height: inherit;
+                opacity: 1;
+                margin-top: 27px;
+            }
         }
     }
 

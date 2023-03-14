@@ -1,5 +1,19 @@
-  
-  // search
+
+
+  document.querySelector('.good__specification-arrow').addEventListener('click', function(e){ 
+    document.querySelector('.good__specification-arrow').classList.toggle('good__specification-arrow_active');
+    document.querySelector('.good__specification-arrow').nextElementSibling.classList.toggle('active');
+  })
+
+  document.querySelector('.good__descr-arrow').addEventListener('click', function(e){ 
+    document.querySelector('.good__descr-arrow').classList.toggle('good__descr-arrow_active');
+    document.querySelector('.good__descr-text').classList.toggle('good__descr-text_active');
+  })
+
+
+ 
+ 
+ // search
   document.querySelector('.header__search').addEventListener('click', function(){
   document.querySelector('.header__form').classList.toggle('header__form-active');
 });
@@ -67,6 +81,8 @@ const catalogAsideSubLinks = document.querySelectorAll('.catalog__aside-sublink'
 asideMenu(catalogAsideLinks, 'catalog__aside-sublists_active');
 asideMenu(catalogAsideSubLinks, 'catalog__aside-subsublists_active');
  
+
+
 // sliders 
 const IsrecomendSlider = document.querySelector('.recomend__slider');
 if (IsrecomendSlider != null) {
