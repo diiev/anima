@@ -1,5 +1,7 @@
 
+   if (document.querySelector('.good__specification-arrow') != null ||document.querySelector('.good__descr-arrow') != null ) {
 
+   
   document.querySelector('.good__specification-arrow').addEventListener('click', function(e){ 
     document.querySelector('.good__specification-arrow').classList.toggle('good__specification-arrow_active');
     document.querySelector('.good__specification-arrow').nextElementSibling.classList.toggle('active');
@@ -9,7 +11,7 @@
     document.querySelector('.good__descr-arrow').classList.toggle('good__descr-arrow_active');
     document.querySelector('.good__descr-text').classList.toggle('good__descr-text_active');
   })
-
+}
 
  
  

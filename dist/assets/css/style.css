@@ -2230,7 +2230,13 @@ html, body {
     opacity: 1;
 }
 
+.good__specification ul.active li {
+    height: inherit;
+}
+
 .good__specification li {
+    transition: all 0.4s ease-in-out;
+    height: 0;
     font-weight: 400;
     font-size: 15px;
     line-height: 47px;

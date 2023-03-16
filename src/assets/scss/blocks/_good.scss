@@ -288,8 +288,13 @@
            margin-top: 15px;
            height: inherit;
            opacity: 1;
+           li {
+            height: inherit;
+           }
        }
-        li {
+        li {  
+            transition: all .4s ease-in-out;
+            height: 0;
             font-weight: 400;
             font-size: 15px;
             line-height: 47px;
