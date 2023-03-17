@@ -43,7 +43,8 @@
         color: #F3F3F3;
         &::placeholder {
             color: #fff;
-      }
+      } 
+    
     }
     &__inputpolicy {
         margin-top: 20px;
@@ -60,7 +61,7 @@
             height: 14px;
             margin-right: 10px;
             background: transparent;
-            color: #000;
+            color: #000; 
         }
       
     }
@@ -139,6 +140,7 @@
             a {    
                 color: rgba($color: #ffff, $alpha: .6);
             }
+           
         }
     }
     &__icons {
