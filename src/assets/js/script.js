@@ -53,27 +53,30 @@
       
       btnUp.addEventListener();
       
-      // spoiler
+      // accordion
       const arrow = document.querySelectorAll('.advantages__spoiler-arrow');
-      const descr = document.querySelectorAll('.advantages__spoiler-descr');
-      for (let i = 0; i < arrow.length; i++) {
-        arrow[i].addEventListener('click', (e)=>{
+        arrow.forEach(item => {
+          item.addEventListener('click', (e)=>{
             e.preventDefault();
-            if(document.querySelector('.advantages__spoiler-arrow_active') !== null && document.querySelector('.advantages__spoiler-arrow_active') !== arrow[i]){
-              document.querySelector('.advantages__spoiler-arrow_active').classList.remove('advantages__spoiler-arrow_active');
-              document.querySelector('.advantages__spoiler-descr_active').classList.remove('advantages__spoiler-descr_active');
-            }
-            arrow[i].classList.toggle('advantages__spoiler-arrow_active');
-            descr[i].classList.toggle('advantages__spoiler-descr_active');
+           item.classList.toggle('advantages__spoiler-arrow_active');
+           item.parentNode.parentElement.lastChild.previousSibling.classList.toggle('advantages__spoiler-descr_active');
+          arrow.forEach(otherItem => {
+             if (otherItem !== item) {
+              otherItem.classList.remove('advantages__spoiler-arrow_active');
+              otherItem.parentNode.parentElement.lastChild.previousSibling.classList.remove('advantages__spoiler-descr_active');
+             }
+          });
+           
+        })
         })
        
-      } 
+       
       // aside menu
-       function asideMenu (element, className) {
+       function dropAsideMenu (element, className) {
         for (let i = 0; i < element.length; i++) {
-          element[i].addEventListener('click', (e)=>{ 
+          element[i].addEventListener('click', (e)=> { 
+            e.preventDefault(); 
             if(element[i].nextElementSibling != null) 
-            e.preventDefault();  
             element[i].nextElementSibling.classList.toggle(className);
             element[i].lastElementChild.classList.toggle('catalog__arrow_active');
           })
@@ -81,14 +84,14 @@
       }
       const catalogAsideLinks = document.querySelectorAll('.catalog__aside-link');
       const catalogAsideSubLinks = document.querySelectorAll('.catalog__aside-sublink');;
-      asideMenu(catalogAsideLinks, 'catalog__aside-sublists_active');
-      asideMenu(catalogAsideSubLinks, 'catalog__aside-subsublists_active');
+      dropAsideMenu(catalogAsideLinks, 'catalog__aside-sublists_active');
+      dropAsideMenu(catalogAsideSubLinks, 'catalog__aside-subsublists_active');
 
       // sliders 
       const IsrecomendSlider = document.querySelector('.recomend__slider');
-      if (IsrecomendSlider != null) {
+      if (IsrecomendSlider) {
         const recomendSlider = tns({
-          container: '.recomend__slider',
+          container: IsrecomendSlider,
           items: 1,
           loop: false,
           controls: false,
@@ -105,9 +108,9 @@
         });
       }
       const IsgoodSlider = document.querySelector('.good__slider');
-      if (IsgoodSlider != null) {
+      if (IsgoodSlider) {
         const goodSlider = tns({
-          container: '.good__slider',
+          container: IsgoodSlider,
           items: 1,
           loop: false,
           controls: false,
@@ -125,9 +128,9 @@
         });
       } 
       const IspromoSlider = document.querySelector('.promo__slider');
-      if (IspromoSlider != null) {
+      if (IspromoSlider) {
       const promoSlider = tns({
-        container: '.promo__slider',
+        container: IspromoSlider,
         items: 1,
         loop: false,
         controls: false,
@@ -156,7 +159,7 @@
       }
       
       const IsdetailsSlider = document.querySelector('.details__slider');
-      if (IsdetailsSlider != null) {
+      if (IsdetailsSlider) {
       const detailsSlider = tns({
         container: '.details__slider',
         items: 1,
@@ -174,9 +177,9 @@
       });
       }
       const IsstocksSlider = document.querySelector('.stocks__slider');
-      if (IsstocksSlider != null) {
+      if (IsstocksSlider) {
       const stocksSlider = tns({
-        container: '.stocks__slider',
+        container: IsstocksSlider,
         items: 1,
         loop: false,
         controls: false,
@@ -188,9 +191,9 @@
       });  
       }
       const IsideasSlider = document.querySelector('.ideas__slider');
-      if (IsideasSlider != null) {
+      if (IsideasSlider) {
       const ideasSlider = tns({
-        container: '.ideas__slider',
+        container: IsideasSlider,
         items: 1,
         loop: false,
         controls: false,
